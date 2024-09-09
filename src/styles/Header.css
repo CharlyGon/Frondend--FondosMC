@@ -1,0 +1,81 @@
+/* General style of header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo style */
+.logo-image {
+  height: 50px;
+  width: auto;
+  border-radius: 10%;
+  margin-right: 15px;
+}
+
+/* Menu style */
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-item {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Drop-down menu style */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px 0;
+  min-width: 150px;
+  z-index: 10;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show drop-down menu when hovering */
+.menu-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Style of buttons */
+.header-right .btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-right .btn:hover {
+  background-color: #0056b3;
+}
+
+.header-right .btn.register {
+  background-color: #28a745;
+}
+
+.header-right .btn.register:hover {
+  background-color: #218838;
+}

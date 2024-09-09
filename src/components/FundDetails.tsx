@@ -1,7 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import FundChart from './FundChart';
 import { mockFunds } from '../service/mockData';
+import FundDetailsTable from './FundDetailsTable';
+import '../styles/FundDetails.css';
 
 /**
  * Displays the details of a specific fund based on the ID provided in the URL.
@@ -11,7 +12,7 @@ import { mockFunds } from '../service/mockData';
  *
  * @returns {JSX.Element} The fund details and chart, or a "not found" message.
  */
-const FundDetails: React.FC = () => {
+const FundDetails: React.FC = (): JSX.Element => {
     const { id } = useParams<{ id: string }>();
     const numericId = Number(id);
 
@@ -22,10 +23,8 @@ const FundDetails: React.FC = () => {
     }
 
     return (
-        <div>
-            <h2>Detalles del Fondo: {fund.fondo}</h2>
-            <p>Variación de cuotapartes: {fund.variacionCuotapartePorcentaje.join(', ')}</p>
-            <FundChart fund={fund} /> {/* Pasando el fondo a FundChart */}
+        <div className="fund-details-container">
+            <FundDetailsTable fund={fund} />
         </div>
     );
 };

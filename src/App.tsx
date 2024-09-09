@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import TrendingFunds from './components/TrendingFuns';
@@ -15,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<>
             <TrendingFunds />
-            <FundTable funds={mockFunds} /> {/* Pasa los fondos aquí */}
+            <FundTable funds={mockFunds} />
           </>} />
 
           <Route path="/fund/:id" element={<FundDetails />} />

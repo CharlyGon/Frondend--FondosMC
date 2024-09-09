@@ -35,40 +35,7 @@ const FundRow: React.FC<FundRowProps> = ({ fund, index }) => {
       <td>{fund.fecha}</td>
       <td>{fund.valorMilCuotapartes}</td>
       <td>{fund.variacionCuotapartePorcentaje}%</td>
-      <td>{fund.cantidadCuotapartes}</td>
       <td>{fund.patrimonio}</td>
-      <td>{fund.marketShare}</td>
-      <td>{fund.sociedadDepositaria}</td>
-      <td>{fund.codigoCNV}</td>
-      <td>{fund.calificacion}</td>
-      <td>{fund.codigoCAFCI}</td>
-      <td>{fund.codigoSocGte}</td>
-      <td>{fund.codigoSocDep}</td>
-      <td>{fund.sociedadGerente}</td>
-      <td>{fund.codigoClasificacion}</td>
-      <td>{fund.codigoMoneda}</td>
-      <td>{fund.codigoRegion}</td>
-      <td>{fund.codigoHorizonte}</td>
-      <td>{fund.indiceMM}</td>
-      <td>{fund.comisionIngreso}</td>
-      <td>{fund.honorariosAdmSG}</td>
-      <td>{fund.honorariosAdmSD}</td>
-      <td>{fund.gastosOrdGestion}</td>
-      <td>{fund.comisionRescate}</td>
-      <td>{fund.comisionTransferencia}</td>
-      <td>{fund.honorariosExito}</td>
-      <td>{fund.monedaFondo}</td>
-      <td>{fund.plazoLiq}</td>
-      <td>{fund.decreto596}</td>
-      <td>{fund.idFondoCAFCIPadre}</td>
-      <td>{fund.idFondoCNVPadre}</td>
-      <td>{fund.tipoEscision}</td>
-      <td>{fund.repatriacion}</td>
-      <td>{fund.minimoInversion}</td>
-      <td>{fund.actual}</td>
-      <td>{fund.fechaActual}</td>
-      <td>{fund.variacionPorcentaje}%</td>
-      <td>{fund.reexpPesos}</td>
     </tr>
   );
 };

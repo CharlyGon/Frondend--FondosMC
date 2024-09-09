@@ -8,7 +8,7 @@ export const mockFunds: Fund[] = [
         fecha: '14/05/2024',
         valorMilCuotapartes: 150.25,
         variacionCuotapartePorcentaje: [0.1, 0.15, 0.2, 0.18],
-        fechas: ['Ene', 'Feb', 'Mar', 'Abr'],
+        fechas: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
         cantidadCuotapartes: 308205,
         patrimonio: 53717128121.52,
         marketShare: 0.664,
@@ -85,12 +85,12 @@ export const mockFunds: Fund[] = [
         fechaActual: '13/05/2024',
         variacionPorcentaje: 0.409,
         reexpPesos: 40069295274.68,
-        fechas: ['Ene', 'Feb', 'Mar', 'Abr'],
+        fechas: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
     },
 ];
 
 export const mockFund = {
     fondo: 'Fondo Ahorro 1',
     variacionCuotapartePorcentaje: [0.1, 0.2, 0.3, 0.4],
-    fechas: ['Ene', 'Feb', 'Mar', 'Abr'],
+    fechas: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
   };

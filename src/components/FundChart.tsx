@@ -1,7 +1,7 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 import { Fund } from '../types/fundTypes';
-import  '../utils/chartConfig';
+import '../utils/chartConfig';
 
 /**
  * Props for the FundChart component.
@@ -22,14 +22,14 @@ interface FundChartProps {
  *
  * @returns {JSX.Element} A div containing the Line chart of the fund's variations.
  */
-const FundChart: React.FC<FundChartProps> = ({ fund }) => {
+const FundChart: React.FC<FundChartProps> = ({ fund }: FundChartProps): JSX.Element => {
   const data = {
     labels: fund.fechas,
     datasets: [
       {
         label: `Variación del Fondo ${fund.fondo}`,
         data: fund.variacionCuotapartePorcentaje,
-        fill: false,
+        fill: true,
         backgroundColor: 'rgba(75,192,192,0.2)',
         borderColor: 'rgba(75,192,192,1)',
       },
@@ -37,6 +37,8 @@ const FundChart: React.FC<FundChartProps> = ({ fund }) => {
   };
 
   const options = {
+    responsive: true,
+    maintainAspectRatio: false,
     scales: {
       y: {
         beginAtZero: true,
@@ -45,9 +47,10 @@ const FundChart: React.FC<FundChartProps> = ({ fund }) => {
   };
 
   return (
-    <div style={{ width: '80%', height: '400px' }}>
+    <div className="fund-chart-card">
       <Line data={data} options={options} />
     </div>
   );
 };
+
 export default FundChart;

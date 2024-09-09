@@ -1,0 +1,24 @@
+/* Ensures that the bottom container is centered */
+.fund-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Ensures that the chart occupies all available space */
+.fund-chart-card canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Small screen settings */
+@media (max-width: 768px) {
+  .fund-chart-card {
+    grid-column: span 1;
+  }
+}

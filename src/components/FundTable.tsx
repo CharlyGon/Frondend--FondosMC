@@ -18,59 +18,26 @@ interface FundTableProps {
  *
  * @returns {JSX.Element} a table element with rows for each fund in the list.
  */
-const FundTable: React.FC<FundTableProps> = ({ funds }) => {
+const FundTable: React.FC<FundTableProps> = ({ funds }: FundTableProps): JSX.Element => {
   return (
     <table>
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Fondo</th>
-          <th>Clasificación</th>
-          <th>Fecha</th>
-          <th>Valor (mil cuotapartes)</th>
-          <th>Variación cuotaparte %</th>
-          <th>Cantidad de cuotapartes</th>
-          <th>Patrimonio</th>
-          <th>Market Share</th>
-          <th>Sociedad Depositaria</th>
-          <th>Código CNV</th>
-          <th>Calificación</th>
-          <th>Código CAFCI</th>
-          <th>Código de Soc. Gte.</th>
-          <th>Código de Soc. Dep.</th>
-          <th>Sociedad Gerente</th>
-          <th>Código de Clasificación</th>
-          <th>Código de Moneda</th>
-          <th>Código de Región</th>
-          <th>Código de Horizonte</th>
-          <th>Índice de MM</th>
-          <th>Comisión Ingreso</th>
-          <th>Honorarios Adm. SG</th>
-          <th>Honorarios Adm. SD</th>
-          <th>Gastos Ord. Gestión</th>
-          <th>Comisión Rescate</th>
-          <th>Comisión Transferencia</th>
-          <th>Honorarios Éxito</th>
-          <th>Moneda Fondo</th>
-          <th>Plazo Liq.</th>
-          <th>Decreto 596</th>
-          <th>Id Fondo CAFCI Padre</th>
-          <th>Id Fondo CNV Padre</th>
-          <th>Tipo de Escisión</th>
-          <th>Repatriación</th>
-          <th>Mínimo de Inversión</th>
-          <th>Actual</th>
-          <th>Fecha Actual</th>
-          <th>Variación %</th>
-          <th>Reexp. Pesos</th>
-        </tr>
-      </thead>
-      <tbody>
-        {funds.map((fund, index) => (
-          <FundRow key={fund.id} fund={fund} index={index + 1} />
-        ))}
-      </tbody>
-    </table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Fondo</th>
+        <th>Clasificación</th>
+        <th>Fecha</th>
+        <th>Valor (mil cuotapartes)</th>
+        <th>Variación cuotaparte %</th>
+        <th>Patrimonio</th>
+      </tr>
+    </thead>
+    <tbody>
+      {funds.map((fund, index) => (
+        <FundRow key={fund.id} fund={fund} index={index + 1} />
+      ))}
+    </tbody>
+  </table>
   );
 };
 
