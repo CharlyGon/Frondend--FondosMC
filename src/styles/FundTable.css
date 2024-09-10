@@ -1,0 +1,60 @@
+/* All card container */
+.fund-table {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Styles for each card */
+.fund-card,
+.fund-header {
+    max-width: 85%;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: grid;
+    grid-template-columns: 5% 15% 15% 15% 15% 15% 20%;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+/* Hover ONLY for rows, NOT the header */
+.fund-card:hover {
+    background-color: #9eaae0;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Make sure the header does not change with hover */
+.fund-header {
+    font-weight: bold;
+    background-color: #f5f5f5;
+    transition: none;
+    box-shadow: none;
+}
+
+.fund-header:hover {
+    background-color: #f5f5f5;
+}
+
+/* Adjustments for row content */
+.fund-row-content {
+    display: contents;
+}
+
+/* Ensure that the text is aligned correctly */
+.fund-card h4,
+.fund-header h4 {
+    font-size: 16px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

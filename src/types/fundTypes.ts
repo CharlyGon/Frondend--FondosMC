@@ -3,7 +3,7 @@
  */
 export interface Fund {
     id: number | null | undefined;
-    fondo: string;
+    nombreFondo: string;
     clasificacion: string;
     fecha: string;
     valorMilCuotapartes: number;

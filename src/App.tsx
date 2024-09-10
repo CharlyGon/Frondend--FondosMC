@@ -1,8 +1,8 @@
 import './App.css';
 import Header from './components/Header';
 import TrendingFunds from './components/TrendingFuns';
-import FundTable from './components/FundTable';
-import FundDetails from './components/FundDetails';
+import FundTable from './components/Fund/FundTable';
+import FundDetails from './components/Fund/FundDetailsPage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { mockFunds } from './service/mockData';
 

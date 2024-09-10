@@ -1,11 +1,13 @@
 import React from 'react';
 import FundRow from './FundRow';
-import { Fund } from '../types/fundTypes';
+import { Fund } from '../../types/fundTypes';
+import '../../styles/FundTable.css';
 
 /**
- * Props for the FundTable component.
+ * Interface for the properties required by the FundTable component.
+ *
+ * - funds: An array of fund objects that will be displayed in the table.
  */
-
 interface FundTableProps {
   funds: Fund[];
 }
@@ -20,25 +22,25 @@ interface FundTableProps {
  */
 const FundTable: React.FC<FundTableProps> = ({ funds }: FundTableProps): JSX.Element => {
   return (
-    <table>
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Fondo</th>
-        <th>Clasificación</th>
-        <th>Fecha</th>
-        <th>Valor (mil cuotapartes)</th>
-        <th>Variación cuotaparte %</th>
-        <th>Patrimonio</th>
-      </tr>
-    </thead>
-    <tbody>
+    <div className="fund-table">
+
+      {/* Card for the table headers */}
+      <div className="fund-card fund-header">
+        <h4>#</h4>
+        <h4>Fondo</h4>
+        <h4>Clasificación</h4>
+        <h4>Fecha</h4>
+        <h4>Valor (mil cuotapartes)</h4>
+        <h4>Variación cuotaparte %</h4>
+        <h4>Patrimonio</h4>
+      </div>
+
+      {/* Cards for each fund row */}
       {funds.map((fund, index) => (
         <FundRow key={fund.id} fund={fund} index={index + 1} />
       ))}
-    </tbody>
-  </table>
+    </div>
   );
 };
 
-export default FundTable;
+export default React.memo(FundTable);

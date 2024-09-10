@@ -1,8 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { mockFunds } from '../service/mockData';
+import { mockFunds } from '../../service/mockData';
 import FundDetailsTable from './FundDetailsTable';
-import '../styles/FundDetails.css';
+import '../../styles/FundDetailsPage.css';
 
 /**
  * Displays the details of a specific fund based on the ID provided in the URL.

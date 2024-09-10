@@ -3,7 +3,7 @@ import { Fund } from "../types/fundTypes";
 export const mockFunds: Fund[] = [
     {
         id: 1,
-        fondo: 'Fondo Ahorro 1',
+        nombreFondo: 'Fondo Ahorro 1',
         clasificacion: 'Renta Fija',
         fecha: '14/05/2024',
         valorMilCuotapartes: 150.25,
@@ -46,7 +46,7 @@ export const mockFunds: Fund[] = [
     },
     {
         id: 2,
-        fondo: 'Fondo Renta 2',
+        nombreFondo: 'Fondo Renta 2',
         clasificacion: 'Renta Variable',
         fecha: '14/05/2024',
         valorMilCuotapartes: 341.119,
@@ -93,4 +93,4 @@ export const mockFund = {
     fondo: 'Fondo Ahorro 1',
     variacionCuotapartePorcentaje: [0.1, 0.2, 0.3, 0.4],
     fechas: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
-  };
+};
