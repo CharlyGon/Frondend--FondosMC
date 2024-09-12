@@ -12,8 +12,8 @@ import AuthButtons from "./AuthButtons";
 const Header: React.FC = (): JSX.Element => {
   const menuItems = [
     { label: "Fondos", subItems: ["Ranking", "Clasificación", "Cantidad de cuotapartes"] },
-    { label: "Productos" },
-    { label: "Aprender" }
+    { label: "Productos", subItems: ["Acciones", "Bonos", "Fondos comunes de inversión"] },
+    { label: "Aprender", subItems: ["Guías", "Preguntas frecuentes", "Glosario"] },
   ];
 
   const handleLogin = () => {
