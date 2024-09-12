@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Fund } from "../../types/fundTypes";
 import { useNavigate } from "react-router-dom";
+import FavoriteButton from "./FavoriteButton";
 
 /**
  * Interface that defines the properties required by the FundRow component.
@@ -33,8 +34,14 @@ const handleNavigation = (fundId: number, navigate: ReturnType<typeof useNavigat
  */
 const FundRow: React.FC<FundRowProps> = ({ fund, index }: FundRowProps): JSX.Element => {
   const navigate = useNavigate();
+  const [isFavorite, setIsFavorite] = useState(false);
 
   const handleClick = () => handleNavigation(fund.id!, navigate);
+
+  const toggleFavorite = (e: React.MouseEvent<HTMLButtonElement> | React.KeyboardEvent<HTMLButtonElement>) => {
+    e.stopPropagation();
+    setIsFavorite(!isFavorite);
+  };
 
   return (
     <button
@@ -51,6 +58,9 @@ const FundRow: React.FC<FundRowProps> = ({ fund, index }: FundRowProps): JSX.Ele
         <h4>{fund.valorMilCuotapartes}</h4>
         <h4>{fund.variacionCuotapartePorcentaje}%</h4>
         <h4>{fund.patrimonio}</h4>
+
+        {/* Star of Favorites */}
+        <FavoriteButton isFavorite={isFavorite} onToggleFavorite={toggleFavorite} />
       </div>
     </button>
   );

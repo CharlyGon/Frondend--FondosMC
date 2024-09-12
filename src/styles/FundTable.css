@@ -60,3 +60,21 @@
     vertical-align: middle;
     text-align: center;
 }
+
+.fund-row-content button:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.fund-row-content button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.fund-row-content button:hover svg {
+    color: gold;
+}
