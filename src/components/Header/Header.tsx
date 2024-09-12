@@ -1,8 +1,8 @@
-import React from 'react';
-import LogoButton from './LogoButton';
-import Menu from './Menu';
-import '../../styles/Header.css';
-import AuthButtons from './AuthButtons';
+import React from "react";
+import LogoButton from "./LogoButton";
+import Menu from "./Menu";
+import "../../styles/Header.css";
+import AuthButtons from "./AuthButtons";
 
 /**
  * Header component that displays the logo, menu, and authentication buttons.
@@ -11,17 +11,17 @@ import AuthButtons from './AuthButtons';
  */
 const Header: React.FC = (): JSX.Element => {
   const menuItems = [
-    { label: 'Fondos', subItems: ['Ranking', 'Clasificación', 'Cantidad de cuotapartes'] },
-    { label: 'Productos' },
-    { label: 'Aprender' }
+    { label: "Fondos", subItems: ["Ranking", "Clasificación", "Cantidad de cuotapartes"] },
+    { label: "Productos" },
+    { label: "Aprender" }
   ];
 
   const handleLogin = () => {
-    console.log('Login clicked');
+    console.log("Login clicked");
   };
 
   const handleRegister = () => {
-    console.log('Register clicked');
+    console.log("Register clicked");
   };
 
   return (

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Fund } from '../../types/fundTypes';
+import React from "react";
+import { Fund } from "../../types/fundTypes";
 
 /**
  * Interface to represent the props of the CompanyInfo component.

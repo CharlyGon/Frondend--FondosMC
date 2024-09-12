@@ -1,7 +1,7 @@
-import React from 'react';
-import FundRow from './FundRow';
-import { Fund } from '../../types/fundTypes';
-import '../../styles/FundTable.css';
+import React from "react";
+import FundRow from "./FundRow";
+import { Fund } from "../../types/fundTypes";
+import "../../styles/FundTable.css";
 
 /**
  * Interface for the properties required by the FundTable component.

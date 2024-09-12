@@ -1,8 +1,8 @@
-import React from 'react';
-import { Line } from 'react-chartjs-2';
-import { Fund } from '../../types/fundTypes';
-import '../../utils/chartConfig';
-import { ChartData } from 'chart.js';
+import React from "react";
+import { Line } from "react-chartjs-2";
+import { Fund } from "../../types/fundTypes";
+import "../../utils/chartConfig";
+import { ChartData } from "chart.js";
 
 /**
  * Interface to represent the props of the FundChart component.
@@ -14,17 +14,17 @@ interface FundChartProps {
 }
 
 const CHART_COLORS = {
-  background: 'rgba(75,192,192,0.2)',
-  border: 'rgba(75,192,192,1)',
+  background: "rgba(75,192,192,0.2)",
+  border: "rgba(75,192,192,1)",
 };
 
 /**
  * Generates the data for the chart based on the fund's information.
  *
  * @param {Fund} fund - The fund object containing the variation data and labels.
- * @returns {ChartData<'line'>} The formatted data for the chart.
+ * @returns {ChartData<"line">} The formatted data for the chart.
  */
-const generateChartData = (fund: Fund): ChartData<'line'> => ({
+const generateChartData = (fund: Fund): ChartData<"line"> => ({
   labels: fund.fechas,
   datasets: [
     {
@@ -38,7 +38,7 @@ const generateChartData = (fund: Fund): ChartData<'line'> => ({
 });
 
 /**
- * Chart options configuration for the fund's line chart.
+ * Chart options configuration for the fund"s line chart.
  *
  * @returns {object} The chart options object.
  */

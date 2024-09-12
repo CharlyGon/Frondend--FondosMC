@@ -1,6 +1,6 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import logo from '../../assets/images/logo.webp';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import logo from "../../assets/images/logo.webp";
 
 /**
  * Interface for the properties required by the LogoButton component.
@@ -23,7 +23,7 @@ const LogoButton: React.FC<LogoButtonProps> = ({ altText }) => {
   const navigate = useNavigate();
 
   const handleLogoClick = () => {
-    navigate('/');
+    navigate("/");
   };
 
   return (
@@ -31,8 +31,8 @@ const LogoButton: React.FC<LogoButtonProps> = ({ altText }) => {
       className="logo-button"
       aria-label="Go to homepage"
       style={{
-        background: 'none',
-        border: 'none',
+        background: "none",
+        border: "none",
         padding: 0
       }}
     >
@@ -40,7 +40,7 @@ const LogoButton: React.FC<LogoButtonProps> = ({ altText }) => {
         src={logo}
         alt={altText}
         className="logo-image"
-        style={{ cursor: 'pointer' }}
+        style={{ cursor: "pointer" }}
       />
     </button>
   );

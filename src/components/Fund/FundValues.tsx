@@ -1,5 +1,5 @@
-import React from 'react';
-import { Fund } from '../../types/fundTypes';
+import React from "react";
+import { Fund } from "../../types/fundTypes";
 
 /**
  * Interface to represent the props of the FundValues component.
@@ -23,7 +23,7 @@ const FundValues: React.FC<FundValuesProps> = ({ fund }: FundValuesProps): JSX.E
         <div className="fund-card-table">
             <h3>Valores del Fondo</h3>
             <p><strong>Valor (mil cuotapartes):</strong> {fund.valorMilCuotapartes}</p>
-            <p><strong>Variación cuotaparte %:</strong> {fund.variacionCuotapartePorcentaje.join(', ')}</p>
+            <p><strong>Variación cuotaparte %:</strong> {fund.variacionCuotapartePorcentaje.join(", ")}</p>
             <p><strong>Cantidad de cuotapartes:</strong> {fund.cantidadCuotapartes}</p>
             <p><strong>Patrimonio:</strong> {fund.patrimonio}</p>
             <p><strong>Market Share:</strong> {fund.marketShare}</p>

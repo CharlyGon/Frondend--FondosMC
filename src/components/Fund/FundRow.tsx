@@ -1,6 +1,6 @@
-import React from 'react';
-import { Fund } from '../../types/fundTypes';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { Fund } from "../../types/fundTypes";
+import { useNavigate } from "react-router-dom";
 
 /**
  * Interface that defines the properties required by the FundRow component.
@@ -40,7 +40,7 @@ const FundRow: React.FC<FundRowProps> = ({ fund, index }: FundRowProps): JSX.Ele
     <button
       className="fund-card"
       onClick={handleClick}
-      style={{ cursor: 'pointer' }}
+      style={{ cursor: "pointer" }}
       type="button"
     >
       <div className="fund-row-content">

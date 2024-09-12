@@ -1,14 +1,14 @@
-import React from 'react';
-import { Fund } from '../../types/fundTypes';
-import '../../styles/FundDetailsTable.css';
-import FundChart from './FundChart';
-import BasicInfo from './BasicInfo';
-import FundValues from './FundValues';
-import CompanyInfo from './CompanyInfo';
-import ClassificationRegion from './ClassificationRegion';
-import Fees from './Fees';
-import AdditionalInfo from './AdditionalInfo';
-import CurrentState from './CurrentState';
+import React from "react";
+import { Fund } from "../../types/fundTypes";
+import "../../styles/FundDetailsTable.css";
+import FundChart from "./FundChart";
+import BasicInfo from "./BasicInfo";
+import FundValues from "./FundValues";
+import CompanyInfo from "./CompanyInfo";
+import ClassificationRegion from "./ClassificationRegion";
+import Fees from "./Fees";
+import AdditionalInfo from "./AdditionalInfo";
+import CurrentState from "./CurrentState";
 
 /**
  * Interface to represent the properties required by the FundDetailsTable component.
